@@ -1,0 +1,12 @@
+#使用python中的base64模块进行编码解码
+import  base64
+
+A = input('编码请输入1，转码请输入2')
+str1 = input('请输入转码或者编码内容')
+if A == '1':
+    a = base64.b64encode(str1.encode())
+    print(a)
+else:
+    b = base64.b64decode(str1)
+    print(b)
+#md 激动，终于成功了，改了不知道多少遍了，太难了。真正意义上的自己一个人写的第一个程序，必须保存留恋。
